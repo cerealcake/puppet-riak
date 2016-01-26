@@ -5,7 +5,7 @@
 # for descriptions of these settings
 #
 define riak::tuning::limits (
-  String[1] $user, String[1] $type, String[1] $item, Integer $value
+  $user, $type, $item, $value
 ) {
 
   $key = "$user/$type/$item"
